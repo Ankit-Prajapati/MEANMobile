@@ -1,0 +1,21 @@
+{
+  "name": "mean-mobile",
+  "version": "1.0.0",
+  "description": "MEAN Stack Application for Mobiles",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mean"
+  ],
+  "author": "Ankit Prajapati (prajapati.ankit5@yahoo.com)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.0"
+  }
+}
