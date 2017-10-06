@@ -1,0 +1,388 @@
+[
+    {
+        "brand": "BlackBerry",
+        "name": "BlackBerry KeyOne",
+        "currency": "USD",
+        "price": 599,
+        "featuredImage": "/images/blackbery/keyone/keyonefi.png",
+        "images": [
+            "/images/blackbery/keyone/keyone1.png",
+            "/images/blackbery/keyone/keyone2.png",
+            "/images/blackbery/keyone/keyone3.png"
+        ],
+        "specifications": [
+            {
+                "displaySize": "4.5 Inches",
+                "resolution": "1080 x 1620 pixels",
+                "os": "Android 7.1",
+                "chipset": "Qualcomm MSM8953 Snapdragon 625",
+                "cameraPrimary": "12MP",
+                "battery": "Non-removable Li-Ion 3505 mAh battery",
+                "colors": "Black/Silver, Black"
+            }
+        ],
+        "stars": 5,
+        "location": {
+            "address": "1073 Budapest, Erzsébet körút 43-49., Hungary",
+            "coordinates": [
+                47.502649,
+                19.066785
+            ]
+        },
+        "reviews": [
+            {
+                "name": "Ankit Prajapati",
+                "id": "/user/ankit.json",
+                "review": "Awesome Business Machine",
+                "rating": 5
+            }
+        ],
+        "features": [
+            "Fingerprint Sensors",
+            "Active Noise Cancellation",
+            "Blackberry HUB",
+            "Corning Gorilla Glass 4",
+            "Fast Battery Charging, 50% in 36 min"
+        ]
+    },
+    {
+        "brand": "BlackBerry",
+        "name": "BlackBerry Priv",
+        "currency": "USD",
+        "price": 399,
+        "featuredImage": "/images/blackbery/priv/privfi.png",
+        "images": [
+            "/images/blackbery/priv/priv1.png",
+            "/images/blackbery/priv/priv2.png",
+            "/images/blackbery/priv/priv3.png"
+        ],
+        "specifications": [
+            {
+                "displaySize": "5.4 Inches",
+                "resolution": "1440 x 2560 pixels",
+                "os": "Android 5.1.1",
+                "chipset": "Qualcomm MSM8992 Snapdragon 808",
+                "cameraPrimary": "18MP",
+                "battery": "Non-removable Li-Ion 3410 mAh battery",
+                "colors": "Black"
+            }
+        ],
+        "stars": 4,
+        "location": {
+            "address": "Via Cavour 213, Rione Monti, 00184 Rome, Italy",
+            "coordinates": [
+                41.894493,
+                12.492259
+            ]
+        },
+        "reviews": [
+            {
+                "name": "Ankit Prajapati",
+                "id": "/user/ankit.json",
+                "review": "Crisp Display",
+                "rating": 4
+            },
+            {
+                "name": "Sagar Patel",
+                "id": "/user/sagar.json",
+                "review": "Mindblowing Keyboard",
+                "rating": 4
+            }
+        ],
+        "features": [
+            "Curved Edge Screen",
+            "AMOLED capacitive touchscreen, 16M colors",
+            "Accelerometer, altimeter, gyro, ToF proximity, compass",
+            "Corning Gorilla Glass 4",
+            "Fast battery charging (Quick Charge 2.0)"
+        ]
+    },
+    {
+        "brand": "Sony",
+        "name": "Xperia XZ",
+        "currency": "USD",
+        "price": 699,
+        "featuredImage": "/images/sony/xz/xzfi.png",
+        "images": [
+            "/images/sony/xz/xz1.png",
+            "/images/sony/xz/xz2.png",
+            "/images/sony/xz/xz3.png"
+        ],
+        "specifications": [
+            {
+                "displaySize": "5.2 Inches",
+                "resolution": "1080 x 1920 pixels",
+                "os": "Android 6.0.1",
+                "chipset": "Qualcomm MSM8996 Snapdragon 820",
+                "cameraPrimary": "23MP",
+                "battery": "Non-removable Li-Ion 2900 mAh battery",
+                "colors": "Mineral Black, Platinum, Forest Blue, Deep Pink"
+            }
+        ],
+        "stars": 4,
+        "location": {
+            "address": "Calle 17 No 40B - 300, El Poblado, 050001 Medellín, Colombia",
+            "coordinates": [
+                6.219278,
+                -75.568575
+            ]
+        },
+        "reviews": [
+            {
+                "name": "Ankit Prajapati",
+                "id": "/user/ankit.json",
+                "review": "Excellent Audio and Video",
+                "rating": 5
+            },
+            {
+                "name": "Sagar Patel",
+                "id": "/user/sagar.json",
+                "review": "Crystal Clear Camera Quality",
+                "rating": 5
+            }
+        ],
+        "features": [
+            "Triluminos display",
+            "X-Reality Engine",
+            "64 GB, 3 GB RAM",
+            "Active noise cancellation with dedicated mic",
+            "Fingerprint"
+        ]
+    },
+    {
+        "brand": "Sony",
+        "name": "Xperia Z5",
+        "currency": "USD",
+        "price": 579,
+        "featuredImage": "/images/sony/z5/z5fi.png",
+        "images": [
+            "/images/sony/z5/z51.png",
+            "/images/sony/z5/z52.png",
+            "/images/sony/z5/z53.png"
+        ],
+        "specifications": [
+            {
+                "displaySize": "5.5 Inches",
+                "resolution": "2160 x 3840 pixels",
+                "os": "Android 5.1.1",
+                "chipset": "Qualcomm MSM8994 Snapdragon 810",
+                "cameraPrimary": "23MP",
+                "battery": "Non-removable Li-Ion 3430 mAh battery",
+                "colors": "Chrome, Black, Gold, Pink"
+            }
+        ],
+        "stars": 4,
+        "location": {
+            "address": "Via Nazionale 7, Central Station, 00184 Rome, Italy",
+            "coordinates": [
+                41.901707,
+                12.494887
+            ]
+        },
+        "reviews": [
+            {
+                "name": "Ankit Prajapati",
+                "id": "/user/ankit.json",
+                "review": "What a Chrome",
+                "rating": 5
+            },
+            {
+                "name": "Sagar Patel",
+                "id": "/user/sagar.json",
+                "review": "4K Display is Great",
+                "rating": 5
+            }
+        ],
+        "features": [
+            "Scratch Resistant Glass",
+            "Oleophobic Coating",
+            "ANT+ support",
+            "Active noise cancellation with dedicated mic",
+            "Fingerprint"
+        ]
+    },
+    {
+        "brand": "Apple",
+        "name": "iPhone 7",
+        "currency": "USD",
+        "price": 799,
+        "featuredImage": "/images/apple/iphone7/iphone7fi.png",
+        "images": [
+            "/images/apple/iphone7/iphone71.png",
+            "/images/apple/iphone7/iphone72.png",
+            "/images/apple/iphone7/iphone73.png"
+        ],
+        "specifications": [
+            {
+                "displaySize": "4.7 Inches",
+                "resolution": "750 x 1334 pixels",
+                "os": "iOS 10.0.1",
+                "chipset": "Apple A10 Fusion",
+                "cameraPrimary": "12MP",
+                "battery": "Non-removable Li-Ion 1960 mAh battery (7.45 Wh)",
+                "colors": "Jet Black, Black, Silver, Gold, Rose Gold, Red"
+            }
+        ],
+        "stars": 5,
+        "location": {
+            "address": "Largo Febo 2, Navona, 00186 Rome, Italy",
+            "coordinates": [
+                41.896601,
+                12.47532
+            ]
+        },
+        "reviews": [
+            {
+                "name": "Ankit Prajapati",
+                "id": "/user/ankit.json",
+                "review": "Speedy Phone",
+                "rating": 3
+            }
+        ],
+        "features": [
+            "IP67 certified - dust and water resistant",
+            "Water resistant up to 1 meter and 30 minutes",
+            "Apple Pay (Visa, MasterCard, AMEX certified)",
+            "LED-backlit IPS LCD, capacitive touchscreen, 16M colors",
+            "Fingerprint"
+        ]
+    },
+    {
+        "brand": "Apple",
+        "name": "iPhone 8",
+        "currency": "USD",
+        "price": 899,
+        "featuredImage": "/images/apple/iphone8/iphone8fi.png",
+        "images": [
+            "/images/apple/iphone8/iphone81.png",
+            "/images/apple/iphone8/iphone82.png",
+            "/images/apple/iphone8/iphone83.png"
+        ],
+        "specifications": [
+            {
+                "displaySize": "4.7 Inches",
+                "resolution": "750 x 1334 pixels",
+                "os": "iOS 11",
+                "chipset": "Apple A11 Bionic",
+                "cameraPrimary": "12MP",
+                "battery": "Non-removable Li-Ion 1821 mAh battery (6.96 Wh)",
+                "colors": "Silver, Space Gray, Gold"
+            }
+        ],
+        "stars": 5,
+        "location": {
+            "address": "1051 Budapest, Erzsébet tér 7-8., Hungary",
+            "coordinates": [
+                47.497362,
+                19.052305
+            ]
+        },
+        "reviews": [
+            {
+                "name": "Ankit Prajapati",
+                "id": "/user/ankit.json",
+                "review": "Nice Look",
+                "rating": 4
+            }
+        ],
+        "features": [
+            "Apple GPU (three-core graphics)",
+            "Hexa-core (2x Monsoon + 4x Mistral)",
+            "Lightning to 3.5 mm headphone jack adapter",
+            "Siri natural language commands and dictation",
+            "Fingerprint (front-mounted)"
+        ]
+    },
+    {
+        "brand": "Samsung",
+        "name": "Galaxy S8",
+        "currency": "USD",
+        "price": 699,
+        "featuredImage": "/images/samsung/galaxys8/galaxys8fi.png",
+        "images": [
+            "/images/samsung/galaxys8/galaxys81.png",
+            "/images/samsung/galaxys8/galaxys82.png",
+            "/images/samsung/galaxys8/galaxys83.png"
+        ],
+        "specifications": [
+            {
+                "displaySize": "5.8 Inches",
+                "resolution": "1440 x 2960 pixels",
+                "os": "Android 7.0",
+                "chipset": "Qualcomm MSM8998 Snapdragon 835",
+                "cameraPrimary": "12MP",
+                "battery": "Non-removable Li-Ion 3000 mAh battery",
+                "colors": "Midnight Black, Orchid Gray, Arctic Silver, Coral Blue, Maple Gold"
+            }
+        ],
+        "stars": 5,
+        "location": {
+            "address": "1535 Broadway, New York, NY 10036, USA",
+            "coordinates": [
+                40.75858,
+                -73.986254
+            ]
+        },
+        "reviews": [
+            {
+                "name": "Ankit Prajapati",
+                "id": "/user/ankit.json",
+                "review": "New Look",
+                "rating": 5
+            }
+        ],
+        "features": [
+            "3D Touch (home button only)",
+            "Corning Gorilla Glass 5",
+            "Samsung Pay (Visa, MasterCard certified)",
+            "Samsung DeX",
+            "Qi/PMA wireless charging"
+        ]
+    },
+    {
+        "brand": "Samsung",
+        "name": "Galaxy A7",
+        "currency": "USD",
+        "price": 459,
+        "featuredImage": "/images/samsung/galaxya7/galaxya7fi.png",
+        "images": [
+            "/images/samsung/galaxya7/galaxya71.png",
+            "/images/samsung/galaxya7/galaxya72.png",
+            "/images/samsung/galaxya7/galaxya73.png"
+        ],
+        "specifications": [
+            {
+                "displaySize": "5.7 Inches",
+                "resolution": "1080 x 1920 pixels",
+                "os": "Android 6.0.1",
+                "chipset": "Octa-core 1.9 GHz Cortex-A53",
+                "cameraPrimary": "16MP",
+                "battery": "Non-removable Li-Ion 3600 mAh battery",
+                "colors": "Black Sky, Gold Sand, Blue Mist and Peach Cloud"
+            }
+        ],
+        "stars": 5,
+        "location": {
+            "address": "36 Central Park South, New York, NY 10019, USA",
+            "coordinates": [
+                40.76482,
+                -73.975335
+            ]
+        },
+        "reviews": [
+            {
+                "name": "Ankit Prajapati",
+                "id": "/user/ankit.json",
+                "review": "New Crystal Look",
+                "rating": 5
+            }
+        ],
+        "features": [
+            "Fingerprint (front-mounted)",
+            "Active noise cancellation with dedicated mic",
+            "IP68 certified - dust/water proof over 1.5 meter and 30 minutes",
+            "Samsung DeX",
+            "Qi/PMA wireless charging"
+        ]
+    }
+]
