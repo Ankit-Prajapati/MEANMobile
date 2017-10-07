@@ -1,5 +1,8 @@
 //Require MongoDB Connection.
-require("./api/data/dbConnection").openConnection();
+// require("./api/data/dbConnection").openConnection();
+
+//Require Mongoose Connection.
+require("./api/data/db");
 
 //Express.
 var express = require("express");
