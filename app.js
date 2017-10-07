@@ -1,3 +1,6 @@
+//Require MongoDB Connection.
+require("./api/data/dbConnection").openConnection();
+
 //Express.
 var express = require("express");
 
@@ -39,4 +42,3 @@ var server = app.listen(app.get("port"), function () {
     var port = server.address().port;
     console.log("Magic Happens on Port: " + port);
 });
-
