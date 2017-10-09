@@ -1,5 +1,26 @@
 var mongoose = require("mongoose");
 
+var reviewSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    rating: {
+        type: Number,
+        min: 0,
+        max: 5,
+        "default": 0 //May give Error as it is Keyword in JS. Hence in Double Quotes.
+    },
+    review: {
+        type: String,
+        required: true
+    },
+    createdOn: {
+        type: Date,
+        "default": Date.now
+    }
+});
+
 var mobileSchema = new mongoose.Schema({
     brand: {
         type: String,
@@ -20,7 +41,13 @@ var mobileSchema = new mongoose.Schema({
     featuredImage: String,
     images: [String],
     specifications: {
-
+        displaySize: String,
+        resolution: String,
+        os: String,
+        chipset: String,
+        cameraPrimary: String,
+        battery: String,
+        colors: String
     },
     stars: {
         type: Number,
@@ -29,11 +56,14 @@ var mobileSchema = new mongoose.Schema({
         "default": 0 //May give Error as it is Keyword in JS. Hence in Double Quotes.
     },
     location: {
-
+        address: String,
+        //Longitude(E/W), Latitude(N/W)
+        coordinates: {
+            type: [Number],
+            index: "2dsphere"
+        }
     },
-    reviews: {
-
-    },
+    reviews: [reviewSchema],
     features: [String]
 });
 
