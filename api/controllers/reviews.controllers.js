@@ -2,11 +2,10 @@
 var mongoose = require("mongoose");
 var Mobile = mongoose.model("Mobile");
 
-//To get all the Mobiles.
+//To get all the Reviews of a Mobile.
 var reviewsGetAll = function (req, res) {
     var mobileId = req.params.mobileId;
 
-    //Mongoose
     Mobile
         .findById(mobileId)
         //Tells to just return the "Review" instead of returning all the Data of the Mobile. Useful when data is Huge.
@@ -30,18 +29,16 @@ var reviewsGetAll = function (req, res) {
         });
 };
 
+//To get a Specific Review of a Mobile.
 var reviewsGetOne = function (req, res) {
     var mobileId = req.params.mobileId;
     var reviewId = req.params.reviewId;
 
-    //Mongoose
     Mobile
         .findById(mobileId)
         //Tells to just return the "Review" instead of returning all the Data of the Mobile. Useful when data is Huge.
         .select("reviews")
         .exec(function (err, mobile) {
-
-
 
             if (err) {
                 console.log("Error finding Mobile.");
@@ -54,7 +51,7 @@ var reviewsGetOne = function (req, res) {
                     .status(200)
                     .json({ "message": "Mobile Id not found in Database: " + mobileId })
             } else {
-                //To extract Review based in ReviewId.
+                //To extract Review based on ReviewId.
                 var review = mobile.reviews.id(reviewId);
                 if (review) {
                     res
@@ -63,12 +60,13 @@ var reviewsGetOne = function (req, res) {
                 } else {
                     res
                         .status(404)
-                        .json({ "message": "Review Id not found in DB" + reviewId })
+                        .json({ "message": "Review Id not found in DB: " + reviewId })
                 }
             }
         });
 };
 
+//Function to Add Review for a Mobile.
 var _addReview = function (req, res, mobile) {
     mobile.reviews.push({
         name: req.body.name,
@@ -84,12 +82,13 @@ var _addReview = function (req, res, mobile) {
         } else {
             res
                 .status(201)
-                //To get and return the last added review.
+                //To get the last added/inserted/pushed Review for the Mobile.
                 .json(mobileUpdated.reviews[mobileUpdated.reviews.length - 1])
         }
     });
 }
 
+//To Add or Insert a Review for a Mobile.
 var reviewsAddOne = function (req, res) {
     var mobileId = req.params.mobileId;
 
@@ -136,24 +135,25 @@ var reviewsUpdateOne = function (req, res) {
             };
 
             if (err) {
-                console.log("Error finding Mobile");
+                console.log("Error finding Mobile.");
                 response.status = 500;
                 response.message = err;
             } else if (!mobile) {
-                console.log("Mobile Id not found in database", mobileId);
+                console.log("Mobile Id not found in database: ", mobileId);
                 response.status = 404;
                 response.message = {
-                    "message": "Hotel ID not found " + mobileId
+                    "message": "Mobile Id not found: " + mobileId
                 };
             } else {
 
-                // Get the review
+                //Get the Review.
                 thisReview = mobile.reviews.id(reviewId);
-                // If the review doesn't exist Mongoose returns null
+
+                //If the review doesn't exist Mongoose returns null.
                 if (!thisReview) {
                     response.status = 404;
                     response.message = {
-                        "message": "Review ID not found " + reviewId
+                        "message": "Review Id not found: " + reviewId
                     };
                 }
             }
@@ -197,24 +197,25 @@ var reviewsDeleteOne = function (req, res) {
             };
 
             if (err) {
-                console.log("Error finding Mobile");
+                console.log("Error finding Mobile.");
                 response.status = 500;
                 response.message = err;
             } else if (!mobile) {
-                console.log("Mobile Id not found in database", mobileId);
+                console.log("Mobile Id not found in database: ", mobileId);
                 response.status = 404;
                 response.message = {
-                    "message": "Hotel ID not found " + mobileId
+                    "message": "Mobile Id not found: " + mobileId
                 };
             } else {
 
-                // Get the review
+                //Get the Review.
                 thisReview = mobile.reviews.id(reviewId);
-                // If the review doesn't exist Mongoose returns null
+
+                //If the Review doesn't exist Mongoose returns null.
                 if (!thisReview) {
                     response.status = 404;
                     response.message = {
-                        "message": "Review ID not found " + reviewId
+                        "message": "Review Id not found: " + reviewId
                     };
                 }
             }
@@ -224,9 +225,11 @@ var reviewsDeleteOne = function (req, res) {
                     .status(response.status)
                     .json(response.message);
             } else {
-                
+
+                //Removing the Review.
                 mobile.reviews.id(reviewId).remove();
 
+                //Saving the Mobile.
                 mobile.save(function (err, mobileUpdated) {
                     if (err) {
                         res
@@ -250,12 +253,12 @@ module.exports = {
     reviewsDeleteOne: reviewsDeleteOne
 };
 
-//To update the Reviews with ReviewId
+//To update the Reviews with ReviewId in MongoDB
 // db.mobiles.update(
 //     {},
 //     {
 //         $set: {
-//             "reviews.1._id": ObjectId()
+//             "reviews.0._id": ObjectId()
 //         }
 //     },
 //     { multi: true }

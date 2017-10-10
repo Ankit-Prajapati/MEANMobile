@@ -55,7 +55,7 @@ var runGeoQuery = function (req, res) {
 var mobilesGetAll = function (req, res) {
     console.log("Getting All Mobiles.");
 
-    //MongoDB
+    //MongoDB Code
     //var db = dbConnection.getConnection();
     //var collectionMobile = db.collection("mobiles");
     // collectionMobile
@@ -102,7 +102,6 @@ var mobilesGetAll = function (req, res) {
         return;
     }
 
-    //Mongoose
     Mobile
         .find()
         .skip(offset)
@@ -123,11 +122,11 @@ var mobilesGetAll = function (req, res) {
 
 };
 
-//To get One Mobile by MobileId.
+//To get a Mobile by MobileId.
 var mobilesGetOne = function (req, res) {
     console.log("Getting One Mobile.");
 
-    //MongoDB
+    //MongoDB Code
     // var db = dbConnection.getConnection();
     // var collectionMobile = db.collection("mobiles");
     //collectionMobile
@@ -141,7 +140,6 @@ var mobilesGetOne = function (req, res) {
 
     var mobileId = req.params.mobileId;
 
-    //Mongoose
     Mobile
         .findById(mobileId)
         .exec(function (err, mobile) {
@@ -173,7 +171,7 @@ var _splitArray = function (input) {
     return output;
 }
 
-//To Add one Mobile.
+//To Add a Mobile.
 var mobilesAddOne = function (req, res) {
     console.log("Adding One Mobile.");
 
@@ -205,12 +203,13 @@ var mobilesAddOne = function (req, res) {
         })
 };
 
-//To Update One Mobile
+//To Update a Mobile.
 var mobilesUpdateOne = function (req, res) {
     var mobileId = req.params.mobileId;
+
     Mobile
         .findById(mobileId)
-        //To exclude path from JSON
+        //To exclude path from JSON.
         .select("-reviews")
         .exec(function (err, mobile) {
 
@@ -259,7 +258,7 @@ var mobilesUpdateOne = function (req, res) {
         });
 };
 
-//To Update One Delete
+//To Delete a Mobile.
 var mobilesDeleteOne = function (req, res) {
     var mobileId = req.params.mobileId;
 
