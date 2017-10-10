@@ -116,6 +116,7 @@ var mobilesGetAll = function (req, res) {
             } else {
                 console.log("Mobiles Found: ", mobiles.length);
                 res
+                    .status(200)
                     .json(mobiles);
             }
         })
@@ -238,7 +239,7 @@ var mobilesUpdateOne = function (req, res) {
                     coordinates: [parseFloat(req.body.lng), parseFloat(req.body.lat)]
                 }
 
-                mobile.save(function (er, mobileUpdated) {
+                mobile.save(function (err, mobileUpdated) {
                     if (err) {
                         res
                             .status(500)
