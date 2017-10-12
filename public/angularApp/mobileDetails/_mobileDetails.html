@@ -1,0 +1,38 @@
+<h1>{{vm.mobile.brand}}: {{ vm.mobile.name }} <mobile-rating stars="vm.stars"></mobile-rating></h1>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th colspan="2">Specifications</th>
+    </tr>
+    <tr>
+        <td>Display Size</td>
+        <td>{{vm.mobile.specifications.displaySize}}</td>
+    </tr>
+    <tr>
+        <td>Resolution</td>
+        <td>{{vm.mobile.specifications.resolution}}</td>
+    </tr>
+    <tr>
+        <td>Operating System</td>
+        <td>{{vm.mobile.specifications.os}}</td>
+    </tr>
+    <tr>
+        <td>Primary Camera</td>
+        <td>{{vm.mobile.specifications.cameraPrimary}}</td>
+    </tr>
+    <tr>
+        <td>Battery</td>
+        <td>{{vm.mobile.specifications.battery}}</td>
+    </tr>
+    <tr>
+        <td>Colors</td>
+        <td>{{vm.mobile.specifications.colors}}</td>
+    </tr>
+</table>
+
+<h3>Reviews</h3>
+<div ng-repeat="mob in vm.mobile.reviews">
+    <blockquote>
+        <p>{{ mob.review }}</p>
+        <footer>{{ mob.name }}</footer>
+    </blockquote>
+</div>
