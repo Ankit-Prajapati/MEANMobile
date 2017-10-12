@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="meanMobile">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,7 @@
 
 <body>
     <h1>MEAN Mobile App</h1>
+    <div ng-view></div>
 
     <footer class="footer">
         <div class="container">
@@ -22,6 +23,17 @@
     </footer>
 
     <script src="scripts/jquery/jquery-2.1.4.min.js"></script>
+
+    <!-- Angular JS -->
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+
+    <!-- This "app.js" will work as we have specified to use "public" folder in Node "app.js" -->
+    <script src="angularApp/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="angularApp/mobiles/mobiles.controller.js"></script>
+    <script src="angularApp/reviews/reviews.controller.js"></script>
 </body>
 
 </html>

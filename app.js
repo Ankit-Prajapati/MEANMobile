@@ -32,6 +32,9 @@ app.use(function (req, res, next) {
 //Setting the "public" folder as the Default Route or folder for Serving the Static files.
 app.use(express.static(path.join(__dirname, "public")));
 
+//To enable use of Angular from node_modules.
+app.use("/node_modules", express.static(path.join(__dirname, "node_modules")));
+
 //To deal with posted form data.
 app.use(bodyParser.urlencoded({ extended: false }));
 
