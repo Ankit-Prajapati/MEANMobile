@@ -1,5 +1,5 @@
-angular.module("meanMobile").controller("reviewController", reviewController);
+// angular.module("meanMobile").controller("reviewController", reviewController);
 
-function reviewController() {
-    var vm = this;
-}
+// function reviewController() {
+//     var vm = this;
+// }

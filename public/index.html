@@ -7,11 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MEAN MOBILE APP</title>
     <link href="styles/bootstrap.min.cosmo.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
     <link href="styles/myStyles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <h1>MEAN Mobile App</h1>
+
     <div ng-view></div>
 
     <footer class="footer">
@@ -32,8 +34,15 @@
     <script src="angularApp/app.js"></script>
 
     <!-- Controllers -->
-    <script src="angularApp/mobiles/mobiles.controller.js"></script>
+    <script src="angularApp/mobilesShowcase/mobilesShowcase.controller.js"></script>
+    <script src="angularApp/mobileDetails/mobileDetails.controller.js"></script>
     <script src="angularApp/reviews/reviews.controller.js"></script>
+
+    <!-- Factories -->
+    <script src="angularApp/dataFactory/apiFactory.js"></script>
+
+    <!-- Directives -->
+    <script src="angularApp/dataDirectives/mobileRatingDirective.js"></script>
 </body>
 
 </html>
