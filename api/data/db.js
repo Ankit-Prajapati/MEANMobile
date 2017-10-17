@@ -41,3 +41,4 @@ process.once("SIGUSR2", function () {
 
 //Bring all the Schemas and Models.
 require("../data/mobiles.model");
+require("../data/users.model");
