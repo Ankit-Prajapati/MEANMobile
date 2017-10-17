@@ -7,7 +7,7 @@ var usersController = require("../controllers/users.controllers");
 
 router
     .route("/mobiles")
-    .get(mobilesController.mobilesGetAll)
+    .get(usersController.authenticate, mobilesController.mobilesGetAll)
     .post(mobilesController.mobilesAddOne);
 
 router
