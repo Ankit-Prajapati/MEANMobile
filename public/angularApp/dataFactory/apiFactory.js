@@ -14,6 +14,10 @@ function apiFactory($http) {
         return $http.get("/api/mobiles/" + mobileId).then(success).catch(failure)
     }
 
+    function postReview(id, review) {
+        return $http.post('/api/mobiles/' + id + '/reviews', review).then(success).catch(failure);
+    }
+
     function success(response) {
         return response.data;
     }
