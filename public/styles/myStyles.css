@@ -12,6 +12,10 @@
       margin-bottom: 50px;
   }
   
+  body > .container {
+      padding-top: 60px;
+  }
+  
   .padded {
       padding-top: 30px
   }
