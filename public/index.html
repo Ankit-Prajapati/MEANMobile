@@ -13,22 +13,26 @@
 </head>
 
 <body>
-
-    <div ng-view></div>
+    <mobile-navigation></mobile-navigation>
+    <div class="container">
+        <div ng-view></div>
+    </div>
 
     <footer class="footer">
         <div class="container">
             <p class="text-muted text-center">
-                &copy; 2017 <a href="http://www.ankitprajapati.com" target="_blank">Ankit Prajapati</a>
+                &copy; 2017
+                <a href="http://www.ankitprajapati.com" target="_blank">Ankit Prajapati</a>
             </p>
         </div>
     </footer>
 
     <script src="scripts/jquery/jquery-2.1.4.min.js"></script>
 
-    <!-- Angular JS -->
+    <!-- Node Modules -->
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="node_modules/angular-jwt/dist/angular-jwt.js"></script>
 
     <!-- This "app.js" will work as we have specified to use "public" folder in Node "app.js" -->
     <script src="angularApp/app.js"></script>
@@ -37,12 +41,19 @@
     <script src="angularApp/mobilesShowcase/mobilesShowcase.controller.js"></script>
     <script src="angularApp/mobileDetails/mobileDetails.controller.js"></script>
     <script src="angularApp/reviews/reviews.controller.js"></script>
+    <script src="angularApp/register/register.controller.js"></script>
+    <script src="angularApp/login/login.controller.js"></script>
 
     <!-- Factories -->
     <script src="angularApp/dataFactory/apiFactory.js"></script>
 
     <!-- Directives -->
     <script src="angularApp/dataDirectives/mobileRatingDirective.js"></script>
+    <script src="angularApp/navigationDirective/navigationDirective.js"></script>
+
+    <!-- Authentication -->
+    <script src="angularApp/auth/authFactory.js"></script>
+    <script src="angularApp/auth/authInterceptor.js"></script>
 </body>
 
 </html>
