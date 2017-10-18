@@ -1,4 +1,6 @@
-<h1>{{vm.mobile.brand}}: {{ vm.mobile.name }} <mobile-rating stars="vm.stars"></mobile-rating></h1>
+<h1>{{vm.mobile.brand}}: {{ vm.mobile.name }}
+    <mobile-rating stars="vm.stars"></mobile-rating>
+</h1>
 <table class="table table-bordered table-hover">
     <tr>
         <th colspan="2">Specifications</th>
@@ -35,4 +37,23 @@
         <p>{{ mob.review }}</p>
         <footer>{{ mob.name }}</footer>
     </blockquote>
+</div>
+
+<div ng-if="vm.isLoggedIn()">
+    <form name="vm.reviewForm" ng-submit="vm.addReview()">
+        Your Rating:
+        <input type="number" name="rating" required ng-pattern="/^[1-5]$/" ng-model="vm.rating">
+        <div ng-show="vm.reviewForm.rating.$dirty && vm.reviewForm.rating.$invalid && vm.isSubmitted">
+            <p>Rating must be between 1-5.</p>
+
+        </div>
+
+        Your review:
+        <textarea name="review" required ng-model="vm.review"></textarea>
+        <div ng-show="vm.reviewForm.review.$dirty && vm.isSubmitted">
+            <p>Please add a Review</p>
+        </div>
+
+        <button type="submit" class="btn">Add Review</button>
+    </form>
 </div>
